@@ -3,6 +3,9 @@
 ;;; Code:
 
 ;; Setup Json
+(use-package json-mode
+  :ensure t)
+
 (use-package flycheck-demjsonlint
   :ensure t
   :mode (("\\.eslintrc.*$" . json-mode)
