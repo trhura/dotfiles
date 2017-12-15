@@ -10,9 +10,9 @@
 (tool-bar-mode 0);; Hide annoying toolbar
 (menu-bar-mode 0);; Hide annoying menubar
 
-(use-package dracula-theme
+(use-package ample-zen-theme
   :ensure t
-  :init (load-theme 'dracula t))
+  :config (load-theme 'ample-zen t))
 
 ;; disable multiple windows on startup
 (add-hook 'window-setup-hook 'delete-other-windows)

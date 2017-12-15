@@ -21,7 +21,7 @@
   "Customization for python hook."
   (subword-mode 1)
   ;;(add-hook 'before-save-hook 'py-isort-before-save nil t)
-  (add-hook 'before-save-hook 'python-remove-unused-imports)
+  ;; (add-hook 'before-save-hook 'python-remove-unused-imports)
   (add-hook 'before-save-hook 'elpy-format-code nil t)
   (add-hook 'before-save-hook 'delete-trailing-whitespace nil t))
 
@@ -35,7 +35,7 @@
   (add-hook 'python-mode-hook 'my/python-mode-hook)
   (setq python-indent-offset 4
 	elpy-rpc-backend "jedi")
-  (highlight-indentation-mode -1))
+  (delete `elpy-module-highlight-indentation elpy-modules))
 
 (use-package py-autopep8
   :ensure t)
