@@ -28,8 +28,7 @@
   (go-eldoc-setup)
 
   ;; eyes and hands comfort
-  (subword-mode 1)
-  (glasses-mode 1))
+  (subword-mode 1))
 
 (use-package go-eldoc
   :ensure t)

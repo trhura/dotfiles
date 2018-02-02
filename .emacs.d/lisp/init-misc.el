@@ -12,6 +12,7 @@
       inhibit-startup-buffer-menu t)
 
 (use-package time-stamp
+  :ensure t
   :commands time-stamp
   :init (add-hook 'before-save-hook 'time-stamp)
   :config (progn
@@ -19,6 +20,11 @@
 	    (setq time-stamp-active t)
 	    ;; Sets new format for the time stamp, also used with the creation tag.
 	    (setq time-stamp-format "%02d/%02m/%:y %02H:%02M:%02S %U")))
+
+(use-package graphviz-dot-mode
+  :ensure t
+  :config
+  (setq graphviz-dot-dot-program "/usr/local/bin/dot"))
 
 (provide 'init-misc)
 ;;; init-misc.el ends here

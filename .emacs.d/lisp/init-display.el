@@ -12,7 +12,7 @@
 
 (use-package ample-zen-theme
   :ensure t
-  :config (load-theme 'ample-zen t))
+  :config (load-theme 'wombat t))
 
 ;; disable multiple windows on startup
 (add-hook 'window-setup-hook 'delete-other-windows)

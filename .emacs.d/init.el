@@ -36,7 +36,7 @@
 (require 'init-js)
 (require 'init-markdown)
 (require 'init-php)
-;; (require 'init-haskell)
+(require 'init-elixir)
 (require 'init-web)
 
 ;;; init.el ends here

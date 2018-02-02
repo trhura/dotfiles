@@ -56,9 +56,9 @@ export GOPATH="$HOME/Devel/golang"
 export PATH="$GOPATH/bin:$PATH"
 
 ## Android ## 
+export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="/Users/thurahlaing/Library/Android/sdk"
 export PATH=":$ANDROID_HOME/platform-tools:$PATH"
 
-### LESS ###
-export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
-export LESS=" -R"
+HISTSIZE=5000
+
